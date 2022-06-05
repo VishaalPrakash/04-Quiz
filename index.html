@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <script defer src="Assets/script.js"></script>
+    <link rel="stylesheet" href="Assets/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a class= "view-highscore" href="highscore.html">View Highscores</a>
+            <div class= "time-display">Time:<span class="current-time">0</span></div>
+        </div>
+    </header>
+    <section id = "intro" class = "intro-panel">
+        <div class = "intro-title">
+            <h1>Coding Challenge Quiz</h1>
+        </div>
+        <div class = "intro-description">
+            <p>Answer the following questions as quickly as possible, any wrong answers will reduce time remaining by 15 seconds.</p>
+        </div>
+        <div class = "begin-btn"><button>Start</button></div>
+    </section>
+    <section id ="quiz" class = "quiz-panel">
+        <div class="question-container" id="question">
+        </div>
+        <div class="answer-container" id="answers">
+        </div>
+        <div id="result-display">
+        </div>
+    </section>
+    <section id="result" class="result-panel">
+        <div class="result-score">
+            <h2>All done!</h2>
+            <div>
+                Your final score is <span class="finalScore">_</span>!
+            </div>
+        </div>
+        <div class="highscore">
+            <div>Enter Initials:</div>
+            <input type="text" id="userName" name="userName" />
+            <a class="btn" id="submit-btn" href="highscore.html">Submit</a>
+        </div>
+    </section>
+ 
+    <script src="/Quiz/Assets/script.js"></script>
+</body>
+</html>
